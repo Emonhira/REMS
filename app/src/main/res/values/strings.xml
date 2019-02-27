@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rent management</string>
+    <string name="land_owner">Land Owner</string>
+    <string name="tenants">Tenants</string>
+
+    <string name="textview">This will Help to in Lots of ways thank u for using</string>
+</resources>
