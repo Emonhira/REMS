@@ -4,4 +4,14 @@
     <string name="tenants">Tenants</string>
 
     <string name="textview">This will Help to in Lots of ways thank u for using</string>
+    <string name="butttttton">বাটনটি চাপুন</string>
+
+    <string name="t2">আপনার মোবাইল নাম্বার প্রবেশ করুন</string>
+    <string name="owner">বাড়ির মালিক</string>
+    <string name="t1">আপনার নাম প্রবেশ করুন</string>
+    <string name="name">নাম</string>
+    <string name="number">আপনার নাম্বার প্রবেশ করান</string>
+    <string name="num">নাম্বার</string>
+    <string name="buttontoenter">Button</string>
+    <string name="presstoenter">বাটনটি চাপুন</string>
 </resources>

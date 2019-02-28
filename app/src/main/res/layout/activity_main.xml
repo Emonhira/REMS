@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000001"
     tools:context=".MainActivity">
 
 
@@ -12,17 +13,17 @@
         android:layout_width="199dp"
         android:layout_height="43dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="395dp"
-        android:text="@string/land_owner"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="427dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/owner" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="203dp"
         android:layout_height="39dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="544dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="452dp"
         android:text="@string/tenants" />
 
 </RelativeLayout>
