@@ -13,8 +13,8 @@
         android:layout_width="199dp"
         android:layout_height="43dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="298dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
         android:text="@string/owner" />
 
     <Button
@@ -22,8 +22,8 @@
         android:layout_width="203dp"
         android:layout_height="39dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="544dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="491dp"
         android:text="@string/tenants" />
 
     <TextView
@@ -36,5 +36,25 @@
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
         android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="154dp"
+        android:text="@string/ifownerthenpress"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="@string/tenantnote" />
 
 </RelativeLayout>
