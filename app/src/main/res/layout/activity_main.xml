@@ -13,7 +13,7 @@
         android:layout_width="199dp"
         android:layout_height="43dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="427dp"
+        android:layout_marginTop="298dp"
         android:layout_centerHorizontal="true"
         android:text="@string/owner" />
 
@@ -25,5 +25,14 @@
         android:layout_marginTop="544dp"
         android:layout_centerHorizontal="true"
         android:text="@string/tenants" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:text="@string/rem"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
 
 </RelativeLayout>
