@@ -39,24 +39,24 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="97dp"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="154dp"
         android:text="@string/ifownerthenpress"
         android:textColor="#ffffff"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="359dp"
+        android:text="@string/tenantnote"
         android:textColor="#ffffff"
-        android:text="@string/tenantnote" />
+        android:textSize="34sp" />
 
 </RelativeLayout>
