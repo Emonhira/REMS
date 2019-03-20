@@ -22,10 +22,27 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
+    public Button button2;
+    public void tent(){
+        button2=(Button)findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent y = new Intent(MainActivity.this,Tentspart.class);
+
+                startActivity(y);
+
+            }
+        });
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         land();
+        tent();
     }
 }
