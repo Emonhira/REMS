@@ -17,7 +17,7 @@
         android:text="@string/t1"
         android:textColor="#000001"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        android:textSize="21sp" />
 
     <EditText
         android:id="@+id/editText"
@@ -39,7 +39,7 @@
         android:text="@string/number"
         android:textColor="#000001"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        android:textSize="21sp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -60,6 +60,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="500dp"
         android:text="@string/presstoenter" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="REMS"
+        android:textColor="#000001"
+        android:textSize="50sp" />
 
 
 </RelativeLayout>
