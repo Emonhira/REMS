@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Tentspart"></activity>
+        <activity android:name=".owner_part"></activity>
+        <activity android:name=".tenants_proceed_part" />
+        <activity android:name=".Tentspart" />
         <activity android:name=".LandOwnerActv" />
         <activity android:name=".MainActivity">
             <intent-filter>
