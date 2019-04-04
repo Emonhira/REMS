@@ -23,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="197dp"
-        android:text="Enter you name"
+        android:text="@string/enter_you_name"
         android:textColor="#ffffff"
         android:textSize="28sp" />
 
@@ -38,4 +38,35 @@
         android:inputType="textPersonName"
         android:textColor="#ffffff"
         android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="233dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="344dp"
+        android:text="@string/enter_your_number"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="432dp"
+        android:ems="10"
+        android:hint="number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="516dp"
+        android:text="@string/press_to_proceed" />
 </RelativeLayout>

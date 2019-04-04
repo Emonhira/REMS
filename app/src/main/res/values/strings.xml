@@ -18,4 +18,8 @@
     <string name="ifownerthenpress">যদি আপনি বাড়ির মালিক হন তবে নীচের আইকন টিপুন</string>
     <string name="tenantnote">যদি আপনি ভাড়াটে হন তবে নিচের আইকনে টিপুন</string>
     <string name="welcome_to_rems">Welcome to REMS</string>
+    <string name="enter_you_name">Enter you name</string>
+    <string name="enter_your_number">Enter your Number</string>
+    <string name="press_to_proceed">Press to proceed</string>
+    <string name="rems">REMS</string>
 </resources>
