@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000001"
+    android:background="#4f0209"
     tools:context=".Tentspart">
 
     <TextView
@@ -14,5 +14,28 @@
         android:text="@string/welcome_to_rems"
         android:textColor="#ffffff"
         android:textSize="34sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="197dp"
+        android:text="Enter you name"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="262dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>
