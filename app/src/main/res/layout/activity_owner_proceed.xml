@@ -9,9 +9,11 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REMS"
+        android:layout_width="118dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rems_title"
         android:textColor="#000001"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 </RelativeLayout>

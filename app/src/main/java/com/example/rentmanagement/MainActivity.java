@@ -39,13 +39,31 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public Button button3;
+    public void owner_proceed(){
+        button3=(Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent z = new Intent(MainActivity.this,owner_proceed.class);
+
+                startActivity(z);
+            }
+        });
+
+
+    }
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         land();
         tent();
-
+        owner_proceed();
 
     }
 }
