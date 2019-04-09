@@ -20,11 +20,11 @@
         android:textSize="21sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/name"
         android:layout_width="315dp"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="184dp"
         android:ems="10"
         android:hint="@string/name"
@@ -42,11 +42,11 @@
         android:textSize="21sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/number"
         android:layout_width="309dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="334dp"
         android:ems="10"
         android:hint="@string/num"
@@ -82,13 +82,13 @@
         android:textSize="23sp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/cnumber"
         android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="468dp"
         android:ems="10"
-        android:layout_centerHorizontal="true"
         android:hint="নাম্বার"
         android:inputType="textPersonName" />
 
