@@ -1,16 +1,17 @@
 package com.example.rentmanagement;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
+
 public class DatabaseHelper  extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="Register.db";
-    public static final String TABLE_NAME="Register";
-    public static final String COL_1= "ID";
-    public static final String COL_2="Name";
-    public static final String COL_3="Number";
+
+
 
     public DatabaseHelper(Context context) {
 
@@ -19,7 +20,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-     sqLiteDatabase.execSQL("CREATE TABLE" +TABLE_NAME+ "(ID INTEGER PRIMARY KEY AUTO INCREMENT, Name TEXT, Number TEXT)");
+     sqLiteDatabase.execSQL("Create table user(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Number TEXT,CNumber TEXT)");
 
 
 
@@ -27,6 +28,32 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+      sqLiteDatabase.execSQL("drop table if exists user");//drops table if exists
 
     }
+     //inserting in database
+    public boolean insert( String Name, String Number, String CNumber ){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("Name",Name);
+        contentValues.put("Number",Number);
+        contentValues.put("CNumber",CNumber);
+        long ins = sqLiteDatabase.insert("user",null,contentValues);
+        if(ins==-1) return false;
+        else return true;
+
+    }
+    // checking if name exists
+    public boolean checkname(String name){
+        SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{name});
+        if(cursor.getCount()>0) return false;
+        else return true;
+
+
+    }
+
+
+
+
 }

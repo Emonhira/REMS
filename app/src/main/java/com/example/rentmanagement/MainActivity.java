@@ -1,28 +1,20 @@
 package com.example.rentmanagement;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText e1,e2,e3;
+DatabaseHelper db;
 Button b3;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public Button button;
@@ -66,6 +58,7 @@ Button b3;
         setContentView(R.layout.activity_main);
         land();
         tent();
+        db = new DatabaseHelper(this);
         e1=(EditText)findViewById(R.id.name);
         e2=(EditText)findViewById(R.id.number);
         e3=(EditText)findViewById(R.id.cnumber);
@@ -77,10 +70,26 @@ Button b3;
 
                 startActivity(z);
 
-            }
-        });
+                 String Name = name.getText().toString();
+                String Number = number.getText().toString();
+                String CNumber = cnumber.getText().toString();
+                if(Name.equals("")||Number.equals("")||CNumber.equals("")){
+                    Toast.makeText(getApplicationContext(), "স্থান পূরণ করুন",Toast.LENGTH_SHORT).show();
+
+            }        });
+        }
 
 
 
-    }
+
+
+     }
+
+
+
+
+
+
+
+
 }
