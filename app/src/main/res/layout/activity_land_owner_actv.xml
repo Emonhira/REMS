@@ -13,30 +13,30 @@
         android:layout_width="221dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="147dp"
+        android:layout_marginTop="108dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/t1"
         android:textColor="#000001"
-        android:layout_centerHorizontal="true"
         android:textSize="21sp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="315dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="184dp"
         android:ems="10"
         android:hint="@string/name"
-        android:layout_centerHorizontal="true"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="235dp"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="303dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
         android:text="@string/number"
         android:textColor="#000001"
         android:textSize="21sp" />
@@ -45,9 +45,9 @@
         android:id="@+id/editText2"
         android:layout_width="309dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="374dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="334dp"
         android:ems="10"
         android:hint="@string/num"
         android:inputType="textPersonName" />
@@ -56,9 +56,9 @@
         android:id="@+id/button3"
         android:layout_width="262dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="598dp"
+        android:layout_marginTop="553dp"
+        android:layout_centerHorizontal="true"
         android:text="@string/presstoenter" />
 
     <TextView
@@ -75,10 +75,10 @@
         android:layout_width="194dp"
         android:layout_height="45dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="440dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="402dp"
         android:text="@string/number_confirm"
         android:textColor="#000001"
+        android:layout_centerHorizontal="true"
         android:textSize="23sp" />
 
     <EditText
@@ -86,9 +86,9 @@
         android:layout_width="281dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="507dp"
+        android:layout_marginTop="468dp"
         android:ems="10"
+        android:layout_centerHorizontal="true"
         android:hint="নাম্বার"
         android:inputType="textPersonName" />
 
