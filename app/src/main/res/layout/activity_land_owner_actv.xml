@@ -50,7 +50,7 @@
         android:layout_marginTop="334dp"
         android:ems="10"
         android:hint="@string/num"
-        android:inputType="textPersonName" />
+        android:inputType="numberPassword" />
 
     <Button
         android:id="@+id/button3"
@@ -90,7 +90,7 @@
         android:layout_marginTop="468dp"
         android:ems="10"
         android:hint="নাম্বার"
-        android:inputType="textPersonName" />
+        android:inputType="numberPassword" />
 
 
 </RelativeLayout>
