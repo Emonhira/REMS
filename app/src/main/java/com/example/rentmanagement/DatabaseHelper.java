@@ -20,7 +20,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-     sqLiteDatabase.execSQL("Create table user(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Number TEXT,CNumber TEXT)");
+     sqLiteDatabase.execSQL("Create table user(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name text primary key, Number text,CNumber text)");
 
 
 
@@ -32,12 +32,11 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     }
      //inserting in database
-    public boolean insert( String Name, String Number, String CNumber ){
+    public boolean insert( String Name, String Number ){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("Name",Name);
         contentValues.put("Number",Number);
-        contentValues.put("CNumber",CNumber);
         long ins = sqLiteDatabase.insert("user",null,contentValues);
         if(ins==-1) return false;
         else return true;
@@ -52,7 +51,6 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
 
     }
-
 
 
 

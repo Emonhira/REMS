@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText e1,e2,e3;
-DatabaseHelper sqLiteDatabse;
-Button b3;
+DatabaseHelper sqLiteDatabase;
+Button button3;
 
 
     public Button button;
@@ -47,43 +47,38 @@ Button b3;
         });
 
     }
-
-
-
-
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         land();
         tent();
-        sqLiteDatabse = new DatabaseHelper(this);
+        sqLiteDatabase = new DatabaseHelper(this);
         e1=(EditText)findViewById(R.id.name);
         e2=(EditText)findViewById(R.id.number);
         e3=(EditText)findViewById(R.id.cnumber);
-        b3=(Button)findViewById(R.id.button3);
-        b3.setOnClickListener(new View.OnClickListener() {
+        button3=(Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent z = new Intent(MainActivity.this, OwnerPart.class);
 
                 startActivity(z);
 
-                String Name = name.getText().toString();
-                String Number = number.getText().toString();
-                String CNumber = cnumber.getText().toString();
-                if (Name.equals("") || Number.equals("") || CNumber.equals("")) {
+                String s1 = e1.getText().toString();
+                String s2 = e2.getText().toString();
+                String s3 = e3.getText().toString();
+                if (s1.equals("") || s2.equals("") || s3.equals("")) {
                     Toast.makeText(getApplicationContext(), "স্থান পূরণ করুন", Toast.LENGTH_SHORT).show();
 
                 }
 
                 else {
-                    if(Number.equals(CNumber)){
-                        Boolean checkname = sqLiteDatabase.checkname(Name);
+                    if(s2.equals(s3)){
+                        boolean checkname = sqLiteDatabase.checkname(s1);
                         if(checkname==true){
-                           boolean insert = sqLiteDatabase.insert(Name,Number);
+                           boolean insert = sqLiteDatabase.insert(s1,s2);
                             if (insert==true){
                                 Toast.makeText(getApplicationContext(),"সাফল্যের সাথে নিবন্ধিত", Toast.LENGTH_SHORT).show();
                             }
@@ -120,14 +115,3 @@ Button b3;
 
 
 
-
-
-
-
-
-
-
-
-
-
-}
