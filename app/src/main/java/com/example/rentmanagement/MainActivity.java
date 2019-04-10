@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.icu.text.UnicodeSetSpanner;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText e1,e2,e3;
-DatabaseHelper db;
+DatabaseHelper sqLiteDatabse;
 Button b3;
 
 
@@ -58,7 +59,7 @@ Button b3;
         setContentView(R.layout.activity_main);
         land();
         tent();
-        db = new DatabaseHelper(this);
+        sqLiteDatabse = new DatabaseHelper(this);
         e1=(EditText)findViewById(R.id.name);
         e2=(EditText)findViewById(R.id.number);
         e3=(EditText)findViewById(R.id.cnumber);
@@ -66,24 +67,61 @@ Button b3;
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent z = new Intent(MainActivity.this,OwnerPart.class);
+                Intent z = new Intent(MainActivity.this, OwnerPart.class);
 
                 startActivity(z);
 
-                 String Name = name.getText().toString();
+                String Name = name.getText().toString();
                 String Number = number.getText().toString();
                 String CNumber = cnumber.getText().toString();
-                if(Name.equals("")||Number.equals("")||CNumber.equals("")){
-                    Toast.makeText(getApplicationContext(), "স্থান পূরণ করুন",Toast.LENGTH_SHORT).show();
+                if (Name.equals("") || Number.equals("") || CNumber.equals("")) {
+                    Toast.makeText(getApplicationContext(), "স্থান পূরণ করুন", Toast.LENGTH_SHORT).show();
 
-            }        });
+                }
+
+                else {
+                    if(Number.equals(CNumber)){
+                        Boolean checkname = sqLiteDatabase.checkname(Name);
+                        if(checkname==true){
+                           boolean insert = sqLiteDatabase.insert(Name,Number);
+                            if (insert==true){
+                                Toast.makeText(getApplicationContext(),"সাফল্যের সাথে নিবন্ধিত", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else {
+                            Toast.makeText(getApplicationContext(),"নাম ইতিমধ্যে বিদ্যমান",Toast.LENGTH_SHORT).show();
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+            });
         }
 
 
+         }
 
 
 
-     }
+
+
+
 
 
 
