@@ -9,26 +9,29 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DatabaseHelper  extends SQLiteOpenHelper {
-    //public static final String DATABASE_NAME="Register.db";
+
 
 
 
     public DatabaseHelper(Context context) {
 
         super(context,"Register.db",null,1);
+
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
      sqLiteDatabase.execSQL("Create table user(name text primary key, number text)");
+     sqLiteDatabase.execSQL("Create table tenant(names text primary key ,numbers text)");
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
       sqLiteDatabase.execSQL("drop table if exists user");//drops table if exists
-
+        sqLiteDatabase.execSQL("drop table if exists tenant");//drops table if exists
     }
-     //inserting in database
+     //inserting in database of owners
     public Boolean insert( String name, String number ){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -38,16 +41,38 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
         if(ins==-1) return false;
         else return true;
 
+
     }
-    // checking if name exists
+
+    // checking if name exists of owners
     public Boolean checkmate(String name){
         SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{name});
         if(cursor.getCount()>0) return false;
         else return true;
 
+    }
+
+    //inserting on tenants table;
+    public Boolean inserts( String names, String numbers ){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("names",names);
+        contentValues.put("numbers",numbers);
+        long ints = sqLiteDatabase.insert("tenant",null,contentValues);
+        if(ints ==-1) return false;
+        else return true;
+    }
+
+    // checking if name exists of tenants
+    public Boolean checkmates(String names){
+        SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("Select * from tenant where names =?",new String[]{names});
+        if(cursor.getCount()>0) return false;
+        else return true;
 
     }
+
 
 
 
