@@ -53,12 +53,12 @@
         android:inputType="numberPassword" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/register"
         android:layout_width="262dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="553dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="553dp"
         android:text="@string/presstoenter" />
 
     <TextView

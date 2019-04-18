@@ -1,10 +1,7 @@
 package com.example.rentmanagement;
 
-import android.content.ContentValues;
+
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.icu.text.UnicodeSetSpanner;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
 EditText e1,e2,e3;
 DatabaseHelper sqLiteDatabase;
-Button button3;
+public Button Button3;
 
 
     public Button button;
@@ -47,7 +45,7 @@ Button button3;
         });
 
     }
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,13 +56,13 @@ Button button3;
         e1=(EditText)findViewById(R.id.name);
         e2=(EditText)findViewById(R.id.number);
         e3=(EditText)findViewById(R.id.cnumber);
-        button3=(Button)findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
+        Button3=(Button)findViewById(R.id.register);
+        Button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent z = new Intent(MainActivity.this, OwnerPart.class);
+                Intent z = new Intent(MainActivity.this,OwnerPart.class);
 
-                startActivity(z);
+
 
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
@@ -76,8 +74,8 @@ Button button3;
 
                 else {
                     if(s2.equals(s3)){
-                        boolean checkname = sqLiteDatabase.checkname(s1);
-                        if(checkname==true){
+                        boolean Checkname = sqLiteDatabase.Checkname(s1);
+                        if(Checkname==true){
                            boolean insert = sqLiteDatabase.insert(s1,s2);
                             if (insert==true){
                                 Toast.makeText(getApplicationContext(),"সাফল্যের সাথে নিবন্ধিত", Toast.LENGTH_SHORT).show();
@@ -94,15 +92,7 @@ Button button3;
 
                 }
 
-
-
-
-
-
-
-
-
-
+                startActivity(z);
             }
 
 

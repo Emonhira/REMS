@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OwnerPart">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="138dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/Welcome_note"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000001"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:text="@string/ownerlogin"
+        android:textColor="#000001"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="198dp"
+        android:ems="10"
+        android:hint="@string/owner_name"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="341dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="263dp"
+        android:text="@string/owner_number" />
+
+</RelativeLayout>

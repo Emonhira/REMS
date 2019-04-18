@@ -25,4 +25,8 @@
     <string name="rems_title">REMS</string>
     <string name="number_confirm">আবার নম্বর লিখুন</string>
     <string name="register.toast">Registered successfully</string>
+    <string name="Welcome_note">REMS</string>
+    <string name="ownerlogin">Enter your name</string>
+    <string name="owner_name">Name</string>
+    <string name="owner_number">Enter your number</string>
 </resources>
