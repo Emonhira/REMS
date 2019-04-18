@@ -43,9 +43,9 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     }
     // checking if name exists
-    public boolean Checkname(String name){
+    public boolean checkname(String Name){
         SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{name});
+        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{Name});
         if(cursor.getCount()>0) return false;
         else return true;
 

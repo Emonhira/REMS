@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 EditText e1,e2,e3;
 DatabaseHelper sqLiteDatabase;
-public Button Button3;
+ Button Button3;
 
 
     public Button button;
@@ -60,9 +60,6 @@ public Button Button3;
         Button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent z = new Intent(MainActivity.this,OwnerPart.class);
-
-
 
                 String s1 = e1.getText().toString();
                 String s2 = e2.getText().toString();
@@ -74,8 +71,8 @@ public Button Button3;
 
                 else {
                     if(s2.equals(s3)){
-                        boolean Checkname = sqLiteDatabase.Checkname(s1);
-                        if(Checkname==true){
+                        boolean checkname = sqLiteDatabase.checkname(s1);
+                        if(checkname==true){
                            boolean insert = sqLiteDatabase.insert(s1,s2);
                             if (insert==true){
                                 Toast.makeText(getApplicationContext(),"সাফল্যের সাথে নিবন্ধিত", Toast.LENGTH_SHORT).show();
@@ -92,7 +89,7 @@ public Button Button3;
 
                 }
 
-                startActivity(z);
+
             }
 
 
