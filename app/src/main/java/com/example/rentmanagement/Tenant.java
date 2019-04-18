@@ -10,18 +10,18 @@ import android.widget.Toast;
 public class Tenant extends AppCompatActivity {
 
     EditText et1,et2,et3;
-    DatabaseHelper sqLiteDatabase;
-    Button login;
+    database2 db;
+    Button registers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tentspart);
-        sqLiteDatabase = new DatabaseHelper(this);
+        db = new database2(this);
         et1=(EditText)findViewById(R.id.tname);
         et2=(EditText)findViewById(R.id.tnumber);
         et3=(EditText)findViewById(R.id.ctnumber);
-        login=(Button)findViewById(R.id.login);
-        login.setOnClickListener(new View.OnClickListener() {
+        registers=(Button)findViewById(R.id.registers);
+        registers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String st1 = et1.getText().toString();
@@ -33,9 +33,9 @@ public class Tenant extends AppCompatActivity {
 
                 else {
                     if (st2.equals(st3)) {
-                        Boolean checkmates = sqLiteDatabase.checkmates(st1);
+                        Boolean checkmates = db.checkmates(st1);
                         if (checkmates == true) {
-                            Boolean inserts = sqLiteDatabase.inserts(st1, st2);
+                            Boolean inserts = db.inserts(st1, st2);
                             if (inserts == true) {
                                 Toast.makeText(getApplicationContext(), "Successfully registered", Toast.LENGTH_SHORT).show();
                             }
