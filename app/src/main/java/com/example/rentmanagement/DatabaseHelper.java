@@ -9,21 +9,18 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 
 public class DatabaseHelper  extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME="Register.db";
+    //public static final String DATABASE_NAME="Register.db";
 
 
 
     public DatabaseHelper(Context context) {
 
-        super(context, DATABASE_NAME,null,1);
+        super(context,"Register.db",null,1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-     sqLiteDatabase.execSQL("Create table user(ID INTEGER PRIMARY KEY AUTOINCREMENT, Name text primary key, Number text,CNumber text)");
-
-
-
+     sqLiteDatabase.execSQL("Create table user(name text primary key, number text)");
     }
 
     @Override
@@ -32,20 +29,20 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     }
      //inserting in database
-    public boolean insert( String Name, String Number ){
+    public Boolean insert( String name, String number ){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put("Name",Name);
-        contentValues.put("Number",Number);
+        contentValues.put("name",name);
+        contentValues.put("number",number);
         long ins = sqLiteDatabase.insert("user",null,contentValues);
         if(ins==-1) return false;
         else return true;
 
     }
     // checking if name exists
-    public boolean checkname(String Name){
+    public Boolean checkmate(String name){
         SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{Name});
+        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =?",new String[]{name});
         if(cursor.getCount()>0) return false;
         else return true;
 
