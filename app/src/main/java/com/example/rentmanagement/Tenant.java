@@ -3,7 +3,7 @@ package com.example.rentmanagement;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Tentspart extends AppCompatActivity {
+public class Tenant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

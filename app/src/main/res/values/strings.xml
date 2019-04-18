@@ -29,4 +29,8 @@
     <string name="ownerlogin">Enter your name</string>
     <string name="owner_name">Name</string>
     <string name="owner_number">Enter your number</string>
+    <string name="enter_your_number_again">Enter your number again</string>
+    <string name="nameT">Name</string>
+    <string name="numberT">number</string>
+    <string name="numberTT">number</string>
 </resources>
