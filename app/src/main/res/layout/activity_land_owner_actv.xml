@@ -28,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/username"
         android:layout_marginTop="184dp"
-        android:background="#ffffff"
+        android:background="@drawable/round_edit"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName" />
@@ -53,7 +53,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="334dp"
         android:drawableLeft="@drawable/password"
-        android:background="#ffffff"
+        android:background="@drawable/round_edit"
         android:ems="10"
         android:hint="@string/num"
         android:inputType="numberPassword" />
@@ -64,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
         android:textStyle="bold"
         android:layout_marginTop="553dp"
         android:text="@string/presstoenter" />
@@ -98,7 +99,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="468dp"
         android:drawableLeft="@drawable/password"
-        android:background="#ffffff"
+        android:background="@drawable/round_edit"
         android:ems="10"
         android:hint="নাম্বার"
         android:inputType="numberPassword" />

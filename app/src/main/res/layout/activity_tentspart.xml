@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="196dp"
         android:drawableLeft="@drawable/username"
-        android:background="#ffffff"
+        android:background="@drawable/round_edit"
         android:ems="10"
         android:hint="@string/nameT"
         android:inputType="textPersonName"
@@ -57,26 +57,27 @@
 
     <EditText
         android:id="@+id/tnumber"
-        android:layout_width="262dp"
-        android:layout_height="41dp"
+        android:layout_width="264dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="368dp"
-        android:background="#ffffff"
-        android:ems="10"
+        android:background="@drawable/round_edit"
         android:drawableLeft="@drawable/password"
+        android:ems="10"
         android:hint="@string/numberT"
         android:inputType="numberPassword" />
 
     <Button
         android:id="@+id/registers"
-        android:layout_width="wrap_content"
+        android:layout_width="164dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
         android:layout_marginTop="604dp"
-        android:text="@string/press_to_proceed" />
+        android:background="@drawable/round_button"
+        android:text="@string/press_to_proceed"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView10"
@@ -92,12 +93,12 @@
 
     <EditText
         android:id="@+id/ctnumber"
-        android:layout_width="247dp"
-        android:layout_height="40dp"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="521dp"
-        android:background="#ffffff"
+        android:background="@drawable/round_edit"
         android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint="@string/numberTT"
