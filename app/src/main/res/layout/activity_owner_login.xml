@@ -8,11 +8,11 @@
     tools:context=".Owner_login">
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/Namelogin"
         android:layout_width="255dp"
         android:layout_height="47dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="222dp"
         android:background="@drawable/round_edit"
         android:drawableLeft="@drawable/username"
@@ -45,7 +45,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/numberlogin"
         android:layout_width="252dp"
         android:layout_height="49dp"
         android:layout_alignParentTop="true"
@@ -59,7 +59,7 @@
 
     <Button
         android:id="@+id/logtohome"
-        android:layout_width="wrap_content"
+        android:layout_width="116dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"

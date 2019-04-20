@@ -54,6 +54,15 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 
     }
 
+    //checking name and number
+    public Boolean namenumber(String name , String number){
+        SQLiteDatabase  sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("Select * from user where name =? and number=?",new String[]{name,number});
+        if(cursor.getCount()>0) return true;
+        else return false;
+
+    }
+
 
 
 
