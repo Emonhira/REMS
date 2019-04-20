@@ -10,39 +10,39 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="237dp"
-        android:layout_height="49dp"
+        android:layout_width="273dp"
+        android:layout_height="52dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="89dp"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_marginTop="108dp"
         android:text="@string/t1"
         android:textColor="#000001"
-        android:textSize="21sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="312dp"
         android:layout_height="47dp"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:drawableLeft="@drawable/username"
-        android:layout_marginTop="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
         android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/username"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="263dp"
-        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="265dp"
+        android:layout_marginTop="235dp"
         android:text="@string/number"
+        android:layout_centerHorizontal="true"
         android:textColor="#000001"
-        android:textSize="21sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
@@ -50,12 +50,12 @@
         android:layout_width="314dp"
         android:layout_height="42dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="334dp"
-        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="304dp"
         android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint="@string/num"
+        android:layout_centerHorizontal="true"
         android:inputType="numberPassword" />
 
     <Button
@@ -63,11 +63,12 @@
         android:layout_width="262dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="511dp"
         android:background="@drawable/round_button"
-        android:textStyle="bold"
-        android:layout_marginTop="553dp"
-        android:text="@string/presstoenter" />
+        android:text="@string/presstoenter"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView7"
@@ -81,28 +82,52 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="194dp"
-        android:layout_height="45dp"
+        android:layout_width="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="47dp"
         android:layout_alignParentTop="true"
-        android:textStyle="bold"
-        android:layout_marginTop="402dp"
+        android:layout_marginTop="374dp"
         android:text="@string/number_confirm"
         android:textColor="#000001"
-        android:layout_centerHorizontal="true"
-        android:textSize="23sp" />
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/cnumber"
         android:layout_width="276dp"
         android:layout_height="46dp"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="442dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="468dp"
-        android:drawableLeft="@drawable/password"
         android:background="@drawable/round_edit"
+        android:drawableLeft="@drawable/password"
         android:ems="10"
-        android:hint="নাম্বার"
+        android:hint="@string/nummbers"
         android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="322dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="599dp"
+        android:text="@string/ifregistered"
+        android:textColor="#000001"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="659dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_button"
+        android:text="@string/button_login" />
 
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.rentmanagement;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,10 +13,27 @@ public class LandOwnerActv extends AppCompatActivity {
     DatabaseHelper sqLiteDatabase;
     Button Button3;
 
+
+    public Button login;
+    public void log(){
+        login=(Button)findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent s = new Intent(LandOwnerActv.this,Owner_login.class);
+
+                startActivity(s);
+
+            }
+        });
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_land_owner_actv);
+        log();
 
         sqLiteDatabase = new DatabaseHelper(this);
         e1=(EditText)findViewById(R.id.name);

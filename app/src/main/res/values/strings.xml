@@ -10,7 +10,8 @@
     <string name="owner">বাড়ির মালিক</string>
     <string name="t1">আপনার নাম প্রবেশ করুন</string>
     <string name="name">নাম</string>
-    <string name="number">আপনার নাম্বার প্রবেশ করুন</string>
+    <string name="number">আপনার
+মোবাইল নম্বর প্রবেশ করুন</string>
     <string name="num">নাম্বার</string>
     <string name="buttontoenter">Button</string>
     <string name="presstoenter">নিবন্ধন করুন</string>
@@ -33,4 +34,12 @@
     <string name="nameT">Name</string>
     <string name="numberT">Number</string>
     <string name="numberTT">Number</string>
+    <string name="ifregistered">নিবন্ধিত হলে নীচের বাটন টিপুন</string>
+    <string name="nummbers">নাম্বার</string>
+    <string name="button_login">লগইন</string>
+    <string name="writename">নাম লিখুন</string>
+    <string name="nummmmmmb">আপনার মোবাইল নম্বর প্রবেশ করুন</string>
+    <string name="ownerssss">নাম</string>
+    <string name="mainpage">লগইন</string>
+    <string name="numberrss">নাম্বার</string>
 </resources>
