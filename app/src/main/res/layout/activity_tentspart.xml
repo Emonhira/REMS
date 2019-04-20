@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4f0209"
+    android:background="@drawable/img_background"
     tools:context=".Tenant">
 
     <TextView
@@ -12,28 +12,32 @@
         android:layout_width="290dp"
         android:layout_height="62dp"
         android:text="@string/welcome_to_rems"
-        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textColor="#000001"
         android:textSize="34sp"
         android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="212dp"
-        android:layout_height="48dp"
+        android:layout_width="229dp"
+        android:layout_height="49dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="119dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
         android:text="@string/enter_you_name"
-        android:textColor="#ffffff"
-        android:textSize="28sp" />
+        android:textColor="#000001"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/tname"
-        android:layout_width="278dp"
-        android:layout_height="wrap_content"
+        android:layout_width="276dp"
+        android:layout_height="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="196dp"
+        android:drawableLeft="@drawable/username"
+        android:background="#ffffff"
         android:ems="10"
         android:hint="@string/nameT"
         android:inputType="textPersonName"
@@ -41,23 +45,26 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="233dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="254dp"
         android:layout_height="62dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="284dp"
         android:text="@string/enter_your_number"
-        android:textColor="#ffffff"
-        android:textSize="28sp" />
+        android:textColor="#000001"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/tnumber"
-        android:layout_width="258dp"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
+        android:layout_width="262dp"
+        android:layout_height="41dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="368dp"
+        android:background="#ffffff"
         android:ems="10"
+        android:drawableLeft="@drawable/password"
         android:hint="@string/numberT"
         android:inputType="numberPassword" />
 
@@ -67,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
         android:layout_marginTop="604dp"
         android:text="@string/press_to_proceed" />
 
@@ -76,18 +84,21 @@
         android:layout_height="56dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="436dp"
+        android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:text="@string/enter_your_number_again"
-        android:textColor="#ffffff"
+        android:textColor="#000001"
         android:textSize="27sp" />
 
     <EditText
         android:id="@+id/ctnumber"
         android:layout_width="247dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="521dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint="@string/numberTT"
         android:inputType="numberPassword" />
