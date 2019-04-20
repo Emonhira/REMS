@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000001"
+    android:background="@drawable/background2"
     tools:context=".MainActivity">
 
 
@@ -12,33 +12,34 @@
         android:id="@+id/button"
         android:layout_width="199dp"
         android:layout_height="43dp"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:layout_marginTop="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
         android:background="@drawable/round_button"
-        android:text="@string/owner" />
+        android:text="@string/owner"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="203dp"
         android:layout_height="39dp"
-        android:textStyle="bold"
-        android:background="@drawable/round_button"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="491dp"
-        android:text="@string/tenants" />
+        android:layout_marginTop="565dp"
+        android:background="@drawable/round_button"
+        android:text="@string/tenants"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="41dp"
         android:layout_alignParentTop="true"
+        android:textStyle="bold"
         android:layout_marginTop="36dp"
         android:text="@string/rem"
         android:layout_centerHorizontal="true"
-        android:textColor="#ffffff"
+        android:textColor="#050505"
         android:textSize="30sp" />
 
     <TextView
@@ -46,21 +47,23 @@
         android:layout_width="369dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:textStyle="bold"
         android:layout_marginTop="154dp"
         android:text="@string/ifownerthenpress"
-        android:textColor="#ffffff"
+        android:textColor="#0A0A0A"
         android:layout_centerHorizontal="true"
         android:textSize="32sp" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="369dp"
-        android:layout_height="wrap_content"
+        android:layout_width="367dp"
+        android:layout_height="136dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="359dp"
+        android:layout_marginTop="387dp"
         android:text="@string/tenantnote"
-        android:textColor="#ffffff"
-        android:textSize="34sp" />
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
