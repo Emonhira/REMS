@@ -29,25 +29,10 @@ public class Owner_login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "ভুল সংখ্যা বা নাম",Toast.LENGTH_SHORT).show();
 
 
-
-
-
-
-
-
             }
         });
 
     }
-
-
-
-
-
-
-
-
-
 
 
     @Override
@@ -57,7 +42,7 @@ public class Owner_login extends AppCompatActivity {
         Home();
 
         sqLiteDatabase = new DatabaseHelper(this);
-        a1=(EditText)findViewById(R.id.Namelogin;
+        a1=(EditText)findViewById(R.id.Namelogin);
         a2=(EditText)findViewById(R.id.numberlogin);
 
 

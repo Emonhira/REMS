@@ -55,7 +55,7 @@
         android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint="@string/numberrss"
-        android:inputType="textPersonName" />
+        android:inputType="numberPassword" />
 
     <Button
         android:id="@+id/logtohome"
